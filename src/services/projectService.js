@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = import.meta.env.VITE_API_URL || 'http://localhost:8080/api/projects';
+const API = import.meta.VITE_API_URL || 'https://portifolio-demo.onrender.com/api/projects';
 
 export const getAll = () => axios.get(API);
 
